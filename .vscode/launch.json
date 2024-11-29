@@ -1,7 +1,23 @@
 {
 	"version": "0.2.0",
 	"configurations": [
-		
+		{
+			"type": "cmake",
+			"request": "launch",
+			"name": "CMake: Script debugging",
+			"cmakeDebugType": "script",
+			"scriptPath": "${workspaceFolder}/<...>.cmake"
+		},{
+			"name": "Electron Main",
+			"program": "${workspaceFolder}/main.js",
+			"request": "launch",
+			"runtimeExecutable": "electron",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "node"
+		},
+
 
 		{
 			"args": [
